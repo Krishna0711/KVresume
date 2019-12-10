@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OO Eliga Assignment</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="Eliga.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-dark bg-primary">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+ 		 </button>
+  		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    		<ul class="navbar-nav mr-auto">
+    			<li class="nav-item">
+        			<a class="nav-link" href="#">PERSONAL</a>
+      			</li>
+     			<li class="nav-item">
+        			<a class="nav-link" href="#">GOALS</a>
+      			</li>
+      			<li class="nav-item active" style="text-decoration: underline;">
+        			<a class="nav-link" href="#">REPORTS</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="#">ADMIN</a>
+      			</li>
+      		</ul>
+      			<ul class="navbar-nav">
+	      			<li class="nav-item ">
+	        			<a class="nav-link" href="#">HELP</a>
+	      			</li>
+	      			<li class="nav-item  dropdown">
+	        			<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+	          			WILLIAM ROBINSON
+	        			</a>
+	      			</li>
+    			</ul>
+  		</div>
+	</nav>
+	<div class="row bg-light" style="padding: 10px">
+  		<div class="col-lg-8 col-md-8 col-sm-8">
+    		<h5 style="padding: 10px">Goal Status</h5>	
+  		</div>
+  		<div class="col-lg-4 col-md-4 col-sm-4">
+	 		<select class="form-control">
+	  			<option>2017</option>
+			</select>
+		</div>
+	</div>
+	<div class="row" style="padding:5px">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border">
+			<h6 style="padding: 5px">Goal Status</h6>
+			<div class="container row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>2</h6>
+					<button class="btn row" id="bp"><img src="arrow-up-right.svg">Positive</button>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>1</h6>
+					<button class="btn row" id="bn" ><img src="arrow-right.svg">Neutral</button>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+					<h6>1</h6>
+					<button class="btn row" id="bNe"><img src="arrow-down-right.svg">Negative</button>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+					<h6>3</h6>
+					<button class="btn row" id="bNa"><img src="circle-slash.svg">n/a</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border">
+			<h6 style="padding: 5px">Goal Progress</h6>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>2</h6>
+					<p><img src="cloud.png">0%</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>1</h6>
+					<p><img src="rainfall.png"> 0-50%</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>0</h6>
+					<p><img src="sunCloud.png">50-90%</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>1</h6>
+					<p><img src="brightness.png">100%</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 border">
+			<h6 style="padding: 5px">Action Progress</h6>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>4</h6>
+					<p>0% progress</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>2</h6>
+					<p>In Progress</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>6</h6>
+					<p><img src="Yellow-Ball.ico"> Late</p>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+					<h6>1</h6>
+					<p><img src="done2.png"> Done</p>
+				</div>
+			</div>
+		</div>		
+	</div>
+	<p style="padding-left: 10px">Organization<img src="full-screen.png" style="float: right;padding-right: 10px"></p>
+	<div class="row" style="padding-left: 10px">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<select class="form-control col-lg-6 col-md-6 col-sm-6">
+	  			<option>Organization</option>
+			</select>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<a href="#">Clear Filters</a>
+			<a href="#" style="padding-left: 30px">See more...</a>
+		</div>
+	</div>
+	<div class="row"> 
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<div class="accordion col-lg-9 col-md-9 col-sm-9" id="accordionExample">
+	  				<div>
+	    				<div class="card-header bg-white" id="headingOne">
+	      					<h2 class="mb-0">
+	        				<button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          				>>Organization,Goals
+	        				</button>
+	      					</h2>
+	    				</div>
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+	      					<div class="card-body">
+	      						<div class="accordion" id="stepTwo">
+		      						<div>
+	    								<div class="card-header bg-white" id="headingTwo">
+	      									<h2 class="mb-0" style="width: 315%;background-color: skyblue; ">
+	        								<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+	          								>ELIGA PVT LTD
+	        								</button>
+	      									</h2>
+	    								</div>
+	    								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#stepTwo">
+	      									<div class="card-body" style="width: 315%">
+	      										<table class="table table-striped table-hover" id="eligaPvtLtd">
+												  <tbody>
+												    <tr id="positive1">
+												      <td><div class="row" style="padding-left: 10px"><span class="custom-control custom-checkbox">
+  														<input type="checkbox" class="custom-control-input" id="customCheck1">
+ 				 										<label class="custom-control-label" for="customCheck1"></label>
+														</span>1. Increase the sales on products, which are from long back</div></td>
+												      <td colspan="2"><p class="text-center">*OFF<img src="arrow-up-right.svg" style="float: right;padding-right: 10px"></p></td>
+												      <td><p>16%<span style="float: right;padding-right: 10px ">0/1 !!</span></p></td>
+												      <td><p>DM<img src="messages.png" style="float: right;padding-right: 20px"></p></td>
+												    </tr>
+												    <tr id="neutral">
+												      <td><div class="row" style="padding-left: 10px"><span class="custom-control custom-checkbox">
+  														<input type="checkbox" class="custom-control-input" id="customCheck2">
+  														<label class="custom-control-label" for="customCheck2"></label>
+														</span>2.Fastrack products need to be added more</div></td>
+												      <td colspan="2">
+												      	<div class="slidecontainer">
+												      		<p><span>1k</span><span style="float: right;">5k<img src="arrow-right.svg"></span>
+  															<input type="range" min="1000" max="5000" value="50" class="slider" id="myRange"></p>
+														</div>
+												      </td>
+												      <td></td>
+												      <td><p>2<img src="messages.png" style="float: right;padding-right: 20px"></p></td>
+												    </tr>
+												    <tr id="notAvailable1">
+												      <td><div class="row" style="
+												      padding-left: 10px"><span class="custom-control custom-checkbox">
+  														<input type="checkbox" class="custom-control-input" id="customCheck3">
+  														<label class="custom-control-label" for="customCheck3"></label>
+														</span>3.Goal1</div></td>
+												      <td colspan="2"><img src="circle-slash.svg" style="float: right;padding-right: 10px"></td>
+												      <td></td>
+												      <td><p>0<img src="messages2.png" style="float: right;padding-right: 20px"></p></td>
+												    </tr>
+												    <tr id="notAvailable2">
+												      <td><div class="row" style="padding-left: 10px"><span class="custom-control custom-checkbox">
+												  <input type="checkbox" class="custom-control-input" id="customCheck4">
+												  <label class="custom-control-label" for="customCheck4"></label>
+												</span>4. Goal2</div></td>
+												      <td colspan="2">
+												      	<img src="circle-slash.svg" style="float: right;padding-right: 10px"></td>
+												      <td></td>
+												      <td><p>0<span style="float: right;padding-right: 10px">3</span><img src="messages.png" style="float: right;"></p></td>
+												    </tr>
+												    <tr id="negative1">
+												      <td><div class="row" style="padding-left: 10px"><span class="custom-control custom-checkbox">
+										  <input type="checkbox" class="custom-control-input" id="customCheck5">
+										  <label class="custom-control-label" for="customCheck5"></label>
+										</span>5.Innovation in products packing</div></td>
+									      <td colspan="2"><p style="color: skyblue" class="text-center"><img src="brightness.png">Ready<img src="arrow-down-right.svg" style="float:right;padding-right: 20px"></p></td>
+												      <td><p>22,7%<span style="float:right;">1/6 !!</span></p></td>
+												      <td>3<img src="messages2.png" style="float: right;padding-right: 20px"></td>
+												    </tr>
+												  </tbody>
+												</table>
+	      									</div>
+	    								</div>
+		      						</div>
+		      						<div class="accordion" id="stepThree">
+		      						<div>
+	    								<div class="card-header bg-white" id="headingThree">
+	      									<h2 class="mb-0" style="width: 315%;background-color: skyblue; ">
+	        								<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+	          								>ELIGA Hyderabad
+	        								</button>
+	      									</h2>
+	    								</div>
+	    								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#stepThree">
+	      									<div class="card-body" style="width: 315%">
+	      										<table class="table table-striped table-hover" id="eligaHyderabad">
+	      											<tbody>
+	      												<tr id="notAvailable3">
+													      <td><div class="row" style="padding-left: 10px"><span class="custom-control custom-checkbox">
+															  <input type="checkbox" class="custom-control-input" id="customCheck6">
+															  <label class="custom-control-label" for="customCheck6"></label>
+															</span>6.jjj</div></td>
+													      <td colspan="2"><img src="circle-slash.svg" style="float:right;padding-right: 10px"></td>
+													      <td></td>
+													      <td>0<img src="messages2.png" style="float: right;padding-right: 20px"></td>
+													    </tr>
+													    <tr id="positive2">
+													      <td><div class="row" style="padding-left: 10px"><span class="custom-control custom-checkbox">
+														  <input type="checkbox" class="custom-control-input" id="customCheck7">
+														  <label class="custom-control-label" for="customCheck7"></label>
+														  </span>7.Increase sales on products with seasonal offers</div></td>
+													      <td  colspan="2">
+													      	<div class="slidecontainer">
+												      			<p><span>10k</span><span style="float: right;">30k(->100k)<img src="arrow-up-right.svg"></span>
+  																<input type="range" min="10000" max="100000" value="50" class="slider" id="myRange"></p>
+															</div></td>
+													      <td></td>
+													      <td>0<img src="messages2.png" style="float: right;padding-right: 20px"></td>
+													    </tr>
+	      											</tbody>
+	      										</table>
+	      									</div>
+	      								</div>
+	      							</div>
+	      							</div>
+	      						</div>
+	    					</div>
+	    				</div>
+					</div>
+				</div>
+		</div>		
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="eliga.js"></script>
+</body>
+</html>
