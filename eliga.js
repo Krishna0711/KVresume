@@ -11,6 +11,7 @@
  var notAvailable2 = document.getElementById("notAvailable2")
  var notAvailable3 = document.getElementById("notAvailable3")
  var neutral1 = document.getElementById("neutral")
+ console.log("hello")
 function toggle_vP() 
 {
     if (positive1.style.display == 'table-row' || positive1.style.display=='')
